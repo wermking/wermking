@@ -51,7 +51,7 @@ blendMode(OVERLAY);
   push();
   fill(200,0,100,.8)
 
-  textFont(myFont,2*a);
+  textFont(ftVarelaRound,2*a);
   text('oh',(a^2),100+a);
   pop();
 
