@@ -20,7 +20,7 @@ function setup() {
   background('cyan');
   fill('white');
   noStroke();
-  textFont(t,100);
+  textFont(ftVarelaRound,100);
   text('please work for me :[',100,100);
   a = 0;
   frameRate(30);
