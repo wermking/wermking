@@ -28,7 +28,7 @@ function setup() {
   fill('white');
   noStroke();
   textFont(ftVarelaRound,300);
-  text('The whole world will run its fingers through your hair',100,100);
+  
   a = 0;
   frameRate(30);
   colorMode(HSB,256,100,100,1);
@@ -39,6 +39,7 @@ function setup() {
 }
 
 function draw() {
+  text('The whole world will run its fingers through your hair',100,100);
   noStroke();
 background(0,100,50,.5);
 blendMode(OVERLAY);
