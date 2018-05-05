@@ -1,13 +1,14 @@
 var img;
 var c;
-let myFont;
 var a;
 var hit = false;
 var mouseX;
 let tvGirl;
 
 function preload () {
-  myFont = loadFont('assets/WalterTurncoat-Regular.ttf');
+  let ftWalter = loadFont('assets/WalterTurncoat-Regular.ttf');
+  let ftVarelaRound = loadFont('assets/VarelaRound-Regular.ttf');
+  let ftVT323 = loadFont('assets/VT323-Regular.ttf');
   tvGirl = loadImage('assets/television.png');
 
 
@@ -19,7 +20,7 @@ function setup() {
   background('cyan');
   fill('white');
   noStroke();
-  textFont(myFont,100);
+  textFont(t,100);
   text('please work for me :[',100,100);
   a = 0;
   frameRate(30);
