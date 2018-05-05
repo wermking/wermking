@@ -3,12 +3,19 @@ var c;
 var a;
 var hit = false;
 var mouseX;
+
+//fonts
+var ftWalter;
+var ftVarelaRound;
+var ftVT323;
+
+//images
 let tvGirl;
 
 function preload () {
-  let ftWalter = loadFont('assets/WalterTurncoat-Regular.ttf');
-  let ftVarelaRound = loadFont('assets/VarelaRound-Regular.ttf');
-  let ftVT323 = loadFont('assets/VT323-Regular.ttf');
+  ftWalter = loadFont('assets/WalterTurncoat-Regular.ttf');
+  ftVarelaRound = loadFont('assets/VarelaRound-Regular.ttf');
+  ftVT323 = loadFont('assets/VT323-Regular.ttf');
   tvGirl = loadImage('assets/television.png');
 
 
