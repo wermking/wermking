@@ -27,8 +27,8 @@ function setup() {
   background('cyan');
   fill('white');
   noStroke();
-  textFont(ftVarelaRound);
-  text('please work for me :[',100,100);
+  textFont(ftVarelaRound,300);
+  text('The whole world will run its fingers through your hair',100,100);
   a = 0;
   frameRate(30);
   colorMode(HSB,256,100,100,1);
