@@ -2,7 +2,7 @@ function Intro()
 {
     this.draw = function()
     {
-        image( this.sceneManager.bkImage, 0, 0);
+        image( this.sceneManager.lorcomp3, 0, 0);
 
         drawIntroScreen();        
     }
