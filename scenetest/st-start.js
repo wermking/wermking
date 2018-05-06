@@ -21,6 +21,7 @@ function setup()
     var mgr = new SceneManager();
     mgr.lorcomp3 = lorcomp3; // inject bkImage property
     mgr.lorcomp3gif = lorcomp3gif;
+    mgr.ftVarelaRound = ftVarelaRound;
     mgr.wire();
     mgr.showScene( Intro );
 }
