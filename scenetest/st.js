@@ -1,7 +1,11 @@
 var mgr;
+
+function preload () {
+}
+
 function setup()
 {
-    createCanvas(600, 500);
+    createCanvas(1280,720);
     mgr = new SceneManager();
     // Preload scenes. Preloading is normally optional
     // ... but needed if showNextScene() is used.
