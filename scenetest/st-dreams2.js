@@ -1,43 +1,32 @@
 function Dreams2()
 {
     var c;
-    var a;
-    var hit = false;
-    var mouseX;
     var img;
-    
-    //images
-    let tvGirl;
-
-    this.preload = function(){
-      
-        tvGirl = loadImage('assets/television.png');
-    }
+   
     
 this.setup = function() {
 
   createCanvas(1280,720);
-  fill('white');
+  fill('cyan');
   noStroke();
   textFont(ftVarelaRound,100);
   
-  a = 0;
   frameRate(30);
   colorMode(HSB,256,100,100,1);
- img = loadImage('assets/smallface.png',function(img){
-  image(img, 25, 25);
- });
-  
+  image(imgFace,0,0);
+  a=0;
 
 }
 
     this.draw = function()
     { 
+      a++;
+     
           drawDreams2Screen();     
     }
 
     function drawDreams2Screen()
-    {
+    {   
         textFont(ftVarelaRound,40);
         textAlign(LEFT);
         fill("white");
@@ -47,11 +36,13 @@ this.setup = function() {
 
       background(0,100,50,.5);
       blendMode(OVERLAY);
-        a=a+1;
+
+      
       
         push();
+        
        
-        image(img, 2*a, 25);
+        image(imgFace, 2*a, 25);
         
         pop();
     
@@ -85,4 +76,6 @@ function basicbutton() {
   rect(4*a, 100, 200, 100);
   pop();
 }
+
+
  
