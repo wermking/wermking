@@ -8,6 +8,7 @@ var a;
 var hit;
 var mouseX;
 var mouseY;
+var buttonHit;
 
 //fonts
 var ftVarelaRound;
@@ -40,6 +41,7 @@ function setup() {
     mgr.hit = hit;
     mgr.mouseX = mouseX;
     mgr.mouseY = mouseY;
+    mgr.buttonHit=buttonHit;
     mgr.wire();
     mgr.addScene(Intro);
     mgr.addScene(Dreams2);

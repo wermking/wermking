@@ -114,6 +114,6 @@ function buttonHit(callbackData){
 
 this.mousePressed = function()
 {
-    this.sceneManager.showScene( Dreams2 );
+    this.sceneManager.showScene( Statue );
 }
 

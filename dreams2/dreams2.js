@@ -27,7 +27,7 @@ function setup() {
   background('cyan');
   fill('white');
   noStroke();
-  textFont(ftVarelaRound,100);
+  textFont(ftVarelaRound,300);
   
   a = 0;
   frameRate(30);
@@ -41,9 +41,8 @@ function setup() {
 function draw() {
   
 
-  text('The whole world will run its fingers through your hair',200,200);
-
-
+  text('The whole world will run its fingers through your hair',800,500);
+  
   noStroke();
 background(0,100,50,.5);
 blendMode(OVERLAY);

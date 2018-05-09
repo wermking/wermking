@@ -37,16 +37,15 @@ this.setup = function() {
       background(0,100,50,.5);
       blendMode(OVERLAY);
 
+      image(imgFace, 2*a, 25);
+      image(tvGirl,640-a,360-a,2*a,2*a);
+
+
       
-      
-        push();
-        
-       
-        image(imgFace, 2*a, 25);
         
         pop();
-    
-        image(tvGirl,640-a,360-a,2*a,2*a);
+   
+        
         
       
         push();
@@ -57,6 +56,7 @@ this.setup = function() {
         pop();
       
         basicbutton();
+       
         
     }
 
@@ -77,5 +77,39 @@ function basicbutton() {
   pop();
 }
 
+
+function callbackbutton(){
+  push();
+  blendMode(NORMAL);
+  fill("pink");
+  rect(500,500,100,100);
+  
+  mousePressed();}
+
+  
+function mousePressed(){
+	rectButton(500,500,100,100, buttonHit) //run our check for the button below
+}
+
+function rectButton(x,y,w,h, callback){
+	var hit = false;
+
+	hit = collidePointRect(mouseX,mouseY,x,y,w,h); //see if the mouse is in the rect
+
+	if(hit){ //if its inside fire the callback
+		callback(hit);
+	}
+}
+
+function buttonHit(callbackData){
+	//do things when the button gets pressed.......
+	for(i=0;i<50; i++){
+		for(j=0;j<50; j++){
+      blendMode(NORMAL);
+      fill("green");
+			ellipse(i*100,j*100,50,50)
+		}
+	}
+}
 
  

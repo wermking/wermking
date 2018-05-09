@@ -45,6 +45,7 @@ function setup() {
     mgr.wire();
     mgr.addScene(Intro);
     mgr.addScene(Dreams2);
+    mgr.addScene(Statue);
     mgr.showScene(Intro);
 
 }
