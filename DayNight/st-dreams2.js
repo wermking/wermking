@@ -17,6 +17,10 @@ this.setup = function() {
   a=0;
 
 }
+this.mousePressed = function()
+{
+    this.sceneManager.showScene( Statue );
+}
 
     this.draw = function()
     { 
@@ -78,42 +82,4 @@ function basicbutton() {
 }
 
 
-function callbackbutton(){
-  push();
-  blendMode(NORMAL);
-  fill("pink");
-  rect(500,500,100,100);
-  
-  mousePressed();}
-
-  
-function mousePressed(){
-	rectButton(500,500,100,100, buttonHit) //run our check for the button below
-}
-
-function rectButton(x,y,w,h, callback){
-	var hit = false;
-
-	hit = collidePointRect(mouseX,mouseY,x,y,w,h); //see if the mouse is in the rect
-
-	if(hit){ //if its inside fire the callback
-		callback(hit);
-	}
-}
-
-function buttonHit(callbackData){
-	//do things when the button gets pressed.......
-	for(i=0;i<50; i++){
-		for(j=0;j<50; j++){
-      blendMode(NORMAL);
-      fill("green");
-			ellipse(i*100,j*100,50,50)
-		}
-	}
-}
-
-this.mousePressed = function()
-{
-    this.sceneManager.showScene( Statue );
-}
 

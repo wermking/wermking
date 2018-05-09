@@ -12,15 +12,14 @@ function Statue() {
         frameRate(30);
         colorMode(HSB, 256, 100, 100, 1);
         a = 0;
-        l = ['day', 'sunr', 'night'];
+        l = ['assets-day', 'asset-sunr', 'assets-night'];
         lword = random(l),
-        gifStatue = loadGif(lword"/woman1.gif");
+        gifStatue = loadGif(lword,"/woman1.gif");
 
 
     }
 
     this.draw = function () {
         image(this.gifStatue, 0, 0);
-        drawIntroScreen();
     }
 }

@@ -9,6 +9,8 @@ var hit;
 var mouseX;
 var mouseY;
 var buttonHit;
+var l;
+var lword;
 
 //fonts
 var ftVarelaRound;
@@ -37,6 +39,8 @@ function setup() {
     mgr.lorcomp3gif = lorcomp3gif;
     mgr.imgFace = imgFace;
     mgr.a = a;
+    mgr.l=l;
+    mgr.lword=lword;
     mgr.ftVarelaRound = ftVarelaRound;
     mgr.hit = hit;
     mgr.mouseX = mouseX;
@@ -44,8 +48,8 @@ function setup() {
     mgr.buttonHit=buttonHit;
     mgr.wire();
     mgr.addScene(Intro);
-    mgr.addScene(Dreams2);
     mgr.addScene(Statue);
+    mgr.addScene(Dreams2);
     mgr.showScene(Intro);
 
 }
