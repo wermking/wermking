@@ -11,6 +11,9 @@ var mouseY;
 var buttonHit;
 var l;
 var lword;
+var imgstatueday;
+var imgstatuesunr;
+var imgstatuenight;
 
 //fonts
 var ftVarelaRound;
@@ -22,13 +25,14 @@ function preload() {
     lorcomp3gif = loadGif("assets/lorcomp3.gif");
     tvGirl = loadImage('assets/television.png');
     imgFace = loadImage('assets/smallface.png');
-
-
     //loadfonts
     ftVarelaRound = loadFont('assets/VarelaRound-Regular.ttf');
     ftWalter = loadFont('assets/WalterTurncoat-Regular.ttf');
     ftVT323 = loadFont('assets/VT323-Regular.ttf');
-
+//statue
+imgstatueday= loadGif("assets-day/woman1.gif");
+imgstatuesunr= loadGif("assets-sunr/woman2.gif");
+imgstatuenight= loadGif("assets-night/woman3.gif");
 }
 
 function setup() {
@@ -41,6 +45,9 @@ function setup() {
     mgr.a = a;
     mgr.l=l;
     mgr.lword=lword;
+    mgr.imgstatueday=imgstatueday;
+    mgr.imgstatuesunr=imgstatuesunr;
+    mgr.imgstatuenight=imgstatuenight;
     mgr.ftVarelaRound = ftVarelaRound;
     mgr.hit = hit;
     mgr.mouseX = mouseX;
@@ -49,7 +56,6 @@ function setup() {
     mgr.wire();
     mgr.addScene(Intro);
     mgr.addScene(Statue);
-    mgr.addScene(Dreams2);
     mgr.showScene(Intro);
 
 }
