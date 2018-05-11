@@ -1,14 +1,15 @@
 function Statue() {
 
-   
+    
 
     this.setup = function (){
-    
+        console.log("playing dn-statue.js")
+        console.log(this.sceneManager.imgX0);
+        image(this.sceneManager.imgX0, 0, 0,1280, 720);
     }
    
     this.draw = function () {
 
-            image(this.sceneManager.imgx0, 0, 0, 1280, 720);
 
         textFont(ftVarelaRound, 50);
         textAlign(CENTER);
