@@ -1,0 +1,30 @@
+{
+    "description": "imgs to load based on time",
+    "dayphase": [
+      {
+        "name": "day",
+        "imagepaths": [
+          "Wandering albatross",
+          "Grey-headed albatross",
+          "Black-browed albatross",
+          "Sooty albatross",
+          "Light-mantled albatross"
+        ]
+      },
+      {
+        "name": "sunrise",
+        "imagepaths": [
+          "Antarctic shag",
+          "Imperial shag",
+          "Crozet shag"
+        ]
+      },
+      {
+        "name": "night",
+        "imagepaths": [
+          "South Georgia diving petrel",
+          "Common diving petrel"
+        ]
+      }
+    ]
+  }

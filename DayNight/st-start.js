@@ -33,6 +33,12 @@ function preload() {
 imgstatueday= loadGif("assets-day/woman1.gif");
 imgstatuesunr= loadGif("assets-sunr/woman2.gif");
 imgstatuenight= loadGif("assets-night/woman3.gif");
+
+bmoretime=loadJSON("https://www.amdoren.com/api/timezone.php?api_key=LRwhWrC7zAeubnzgaq2GkPgwHS3gX3&loc=baltimore"
+);
+bmoreweather=loadJSON("http://api.openweathermap.org/data/2.5/weather?id=4347820&appid=b08c4875ac8fd1e3786ba9b3a376f783"
+);
+
 }
 
 function setup() {
@@ -57,5 +63,9 @@ function setup() {
     mgr.addScene(Intro);
     mgr.addScene(Statue);
     mgr.showScene(Intro);
+
+}
+
+function loadweather (){
 
 }
