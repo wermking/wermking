@@ -869,4 +869,6 @@ p5.prototype.loadRawGif = function(data, cb) {
   return p5graphic;
 };
 
+
+console.log("p5.gif.js!");
 })();

@@ -4,9 +4,6 @@ function Statue() {
 
     this.setup = function (){
         l=2;
-        
-
-       
 
     }
 

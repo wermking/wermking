@@ -1,0 +1,28 @@
+{
+    "description": "adapted for p5.play? ",
+    "dayphase": [
+      {
+        "name": "day",
+        "woman": [
+          "dn-png/woman1sunr00.png",
+          "dn-png/woman1sunr01.png",
+          "dn-png/woman1sunr02.png",
+          "dn-png/woman1sunr03.png",
+          "dn-png/woman1sunr04.png"
+        ]
+      },
+      {
+        "name": "sunrise",
+        "gifpaths": [
+          "dn-gif/woman-sunr.gif"
+
+        ]
+      },
+      {
+        "name": "night",
+        "gifpaths": [
+          "dn-gif/woman-night.gif"
+        ]
+      }
+    ]
+  }
