@@ -17,21 +17,6 @@ this.setup = function() {
   a=0;
   
 
-  function preload() {
-    sequenceAnimation = loadAnimation("data/walking0001.png", "data/walking0005.png");
-    glitch = loadAnimation("data/dog.png", "data/horse.png", "data/cat.png", "data/snake.png");
-    }
-    
-    function setup() {
-    createCanvas(800, 600);
-    }
-    
-    function draw() {
-    background(0);
-    animation(sequenceAnimation, 100, 100);
-    animation(glitch, 200, 100);
-    }
-
 }
 this.mousePressed = function()
 {

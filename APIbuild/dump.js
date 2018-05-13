@@ -31,3 +31,34 @@ background(0);
 
 animation(glitch, 200, 100);
 }
+
+function routeloading1() {
+    if (d == 0) {
+        anim1 = loadAnimation(
+            "dn-png/woman1day00.png",
+                      "dn-png/woman1day01.png",
+                      "dn-png/woman1day02.png",
+                      "dn-png/woman1day03.png",
+                      "dn-png/woman1day04.png")
+        console.log("rl1-0");
+    }
+    if (d == 1) {
+        anim1 = loadAnimation("dn-png/woman1sunr00.png",
+"dn-png/woman1sunr01.png",
+"dn-png/woman1sunr02.png",
+"dn-png/woman1sunr03.png",
+"dn-png/woman1sunr04.png");
+console.log("rl1-1");
+    }
+    if (d == 2) {
+        anim1 = loadAnimation(
+            "dn-png/woman1night00.png",
+            "dn-png/woman1night01.png",
+            "dn-png/woman1night02.png",
+            "dn-png/woman1night03.png",
+            "dn-png/woman1night04.png");
+            console.log("rl1-2");
+    }
+    console.log("routeloading completed!");
+    
+}

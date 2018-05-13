@@ -33,6 +33,7 @@ var bmoredate;
 var bdc;
 var imgX;
 var imgX0;
+var imgX0a;
 var anim1;
 var anim;
 
@@ -45,6 +46,13 @@ var ftVT323;
 var checkpoint = ["passed preload", "passed jsonload", "passed if", "passed mgr var hell", "passed draw"]
 var dtime = ["day","sunr","night"];
 function preload() {
+
+    ele = createAudio('assets/rough-dreamaudio.mp3');
+
+// here we set the element to autoplay
+// The element will play as soon
+// as it is able to do so.
+ele.autoplay(true);
 
     lorcomp3gifa = loadImage("assets/lorcomp3.gif");
     lorcomp3gif = loadGif("assets/lorcomp3.gif");
@@ -82,7 +90,6 @@ gotData3();
 
     console.log("1*");
     routeloading();
-    routeloading1();
     console.log("2*");
     console.log(checkpoint[2])
     console.log(lorcomp3gifa);
@@ -113,6 +120,7 @@ gotData3();
     mgr.bdc = bdc;
     mgr.imgX = imgX;
     mgr.imgX0 = imgX0;
+   mgr.imgX0a =imgX0a;
     mgr.anim = anim;
     mgr.anim1 = anim1;
     mgr.dtime=dtime;
@@ -120,6 +128,7 @@ gotData3();
     mgr.wire();
     mgr.addScene(Intro);
     mgr.addScene(Statue);
+    mgr.addScene(Dreams2);
     mgr.showScene(Intro);
 
 
@@ -148,54 +157,22 @@ function chooseweather() {
 function routeloading() {
     if (d == 0) {
         imgX0 = loadImage(imgX.dayphase[0].gifpaths[0]);
+        imgX0a = loadGif(imgX.dayphase[0].gifpaths[0]);
         console.log("rl-0");
     }
     if (d == 1) {
         imgX0 = loadImage(imgX.dayphase[1].gifpaths[0]);
+        imgX0a = loadGif(imgX.dayphase[1].gifpaths[0]);
         console.log("rl-1");
     }
     if (d == 2) {
         imgX0 = loadImage(imgX.dayphase[2].gifpaths[0]),
+        imgX0a = loadGif(imgX.dayphase[2].gifpaths[0]),
         console.log("rl-2")
     }
     console.log("routeloading completed!");
     
 }
-
-function routeloading1() {
-    if (d == 0) {
-        anim1 = loadAnimation(
-            "dn-png/woman1day00.png",
-                      "dn-png/woman1day01.png",
-                      "dn-png/woman1day02.png",
-                      "dn-png/woman1day03.png",
-                      "dn-png/woman1day04.png")
-        console.log("rl1-0");
-    }
-    if (d == 1) {
-        anim1 = loadAnimation("dn-png/woman1sunr00.png",
-"dn-png/woman1sunr01.png",
-"dn-png/woman1sunr02.png",
-"dn-png/woman1sunr03.png",
-"dn-png/woman1sunr04.png");
-console.log("rl1-1");
-    }
-    if (d == 2) {
-        anim1 = loadAnimation(
-            "dn-png/woman1night00.png",
-            "dn-png/woman1night01.png",
-            "dn-png/woman1night02.png",
-            "dn-png/woman1night03.png",
-            "dn-png/woman1night04.png");
-            console.log("rl1-2");
-    }
-    console.log("routeloading completed!");
-    
-}
-
-
-
-
 
          
 

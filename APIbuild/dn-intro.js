@@ -1,18 +1,14 @@
 function Intro() {
-
-    console.log("playing dn-intro.js")
-
-
-    this.draw = function () {
-        createCanvas(1280, 720);
-   
+    
+    this.setup = function (){
+        console.log("playing dn-intro.js")
         image(this.sceneManager.lorcomp3gifa,0,0);
-        console.log("*");
-        drawIntroScreen();
+
     }
 
-    
-
+    this.draw = function () {
+        drawIntroScreen();
+    }
 
 
 
@@ -20,7 +16,8 @@ function Intro() {
 
         textFont(ftVT323, 50);
         textAlign(CENTER);
-        fill("white");
+        fill(255,255,255);
+
 
         text("what's up you bougie little fucker", 640, 670);
     }
@@ -30,8 +27,6 @@ function Intro() {
     {
         this.sceneManager.showScene( Statue );
     }
-
-
 
 }
 

@@ -2,15 +2,18 @@ function Statue() {
 
 
     this.setup = function (){
-        console.log("playing dn-statue.js")
-        console.log(this.sceneManager.anim1);
-        
+        console.log("playing dn-statue.js");
        
+
+        image(this.sceneManager.imgX0,0,0);
+
+        image(this.sceneManager.imgX0a,0,0);
         
     }
-   
+
     this.draw = function () {
-        animation(this.sceneManager.anim1, 0,0);
+
+
 
         textFont(ftVT323, 50);
         textAlign(RIGHT);
@@ -21,4 +24,11 @@ function Statue() {
 
         
     }
+
+    this.mousePressed = function()
+    {
+        this.sceneManager.showScene( Dreams2 );
+    }
+
+
 }
