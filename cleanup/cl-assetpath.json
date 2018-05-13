@@ -1,0 +1,23 @@
+{
+    "description": "imgs to load based on time",
+    "dayphase": [
+      {
+        "name": "day",
+        "gifpaths": [
+          "cl-gif/woman-day.gif"
+        ]
+      },
+      {
+        "name": "sunrise",
+        "gifpaths": [
+          "cl-gif/woman-sunr.gif"
+        ]
+      },
+      {
+        "name": "night",
+        "gifpaths": [
+          "cl-gif/woman-night.gif"
+        ]
+      }
+    ]
+  }
