@@ -1,0 +1,26 @@
+{
+    "description": "image paths for atmotest",
+    
+    "atmonoise":[
+        "assets/overlay/v3ol-0.png",
+        "assets/overlay/v3ol-1.png",
+        "assets/overlay/v3ol-2.png",
+        "assets/overlay/v3ol-3.png",
+        "assets/overlay/v3ol-4.png"
+    ],
+    
+    "dayphase": [
+      {
+        "name": "day",
+        "imgA": ""
+      },
+      {
+        "name": "sunrise",
+        "imgA": ""
+      },
+      {
+        "name": "night",
+        "imgA": ""
+      }
+    ]
+  }
