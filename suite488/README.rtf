@@ -1,18 +1,58 @@
-All Projects are being served on Github Pages
-Kandinsky:
+My work for this semester is all in this "suite488" folder.
+I don't have a seperate 2nd project, but I did put a lot of energy put into 
+working w/ API's in my final if you're feeling charitable.
+
+This has not been a great semester. 
+
 Final:
-
-
-
+www.emmaayala.com/aLorMania
 
 Lor Mania Current Build{}
 
+The program accesses the openweather and timezoneDB APIs,
+and uses the data to calculate the time of the day and the color of the sky.
+In order to create gradual transitions in the background's color, 
+I overlayed an animation** (w/ an array of pngs) over a background();
+which transitions in time with Baltimore's sunrise and sunset.
+I exported the assets in three styles (Day, Sunset, + Night) and 
+then used blend modes to achieve the effect of them matching their environment. 
+This way of working allowed for flexibility during scene construction & 
+for a canvas that adapts to the user's window size. (basically if you check it out during the hours before and after sunset,
+it looks wild!)
+
+Currently, the game feels really barren, but in order to mitigate that 
+I've implemented transition sounds + changing cursor images
+in order to make the game feel more responsive. Users navigate through the scenes
+entirely with their trackpad or mouse—I used Collide2d.js to code
+the scene changing system as well as the interactive objects in the scenes. 
+
+I want to implement more character animation into the game, 
+as well as more carefully created visual assets. This mean + nervous world is
+reflective of my emotional state, so I'm also interested in the idea of getting a fitbit or 
+access to social media API so that I can use data to make even more personal.
+I'd also like to figure out how to measure progression, in order to have triggered events 
+and story progression. 
 
 
+A QUESTION: 
+**Everything is working fine on my local server, but on my website the links to the animation stills aren't working?? 
+The error messages I recieve are:
 
-
-
-(f)orewardc
+(www.emmaayala.com/aLorMania)
+            Failed to load resource: the server responded with a status of 404 (Not Found)
+          
+(emmaayala.com/aLorMania)
+    Access to Image at 'http://www.emmaayala.com/assets/atmolay/filter1.png' from origin 'http://emmaayala.com'
+    has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+    Origin 'http://emmaayala.com' is therefore not allowed access. The response had HTTP status code 404.    
+        
+        Do you know how I might go about fixing that???? 
+        The overlays add a LOT to the visual character of the game. 
+        
+        
+MAP / EVENT TREE 
+        
+(f)oreward
 (l)eft
 (r)ight
 (b)ack
