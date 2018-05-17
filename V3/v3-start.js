@@ -16,7 +16,7 @@ var hit3;
 var mouseX;
 var mouseY;
 var l;
-var imgOL = [];
+var imageoverlay = [];
 var cursortest;
 var cu;
 var footstep = [];
@@ -26,6 +26,7 @@ var prop = [];
 var propNight = [];
 var propSunr = [];
 var propDay = [];
+var atn;
 
 //json+api
 var at;
@@ -44,7 +45,6 @@ var fortunes = ["I don't feel like giving you a fucking fortune right now",
 var dp;
 var d;
 var r;
-var atn;
 var ftn;
 var j;
 
@@ -318,14 +318,12 @@ function atmonoise() {
     if (atn > 4) {
         atn = 0;
     }
-    image(imgOL[atn], 0, 0, windowWidth, ((9 / 16) * windowWidth))
+    image(imageoverlay[atn], 0, 0, windowWidth, ((9 / 16) * windowWidth))
     pop();
 }
 function loadAtmonoise() {
     for (var atn = 0; atn < 5; atn++) {
-        imgOL.push(loadImage(at.atmonoise[atn], console.log("ol loaded", atn)));
-    } if (atn > 4) {
-        atn = 0;
+        imageoverlay.push(loadImage(at.atmonoise[atn]));
     }
 }
 function loadFootstep() {

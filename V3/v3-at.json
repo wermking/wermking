@@ -2,11 +2,11 @@
     "description": "image paths for atmotest",
     
     "atmonoise":[
-        "assets/overlay/v3ol-0.png",
-        "assets/overlay/v3ol-1.png",
-        "assets/overlay/v3ol-2.png",
-        "assets/overlay/v3ol-3.png",
-        "assets/overlay/v3ol-4.png"
+        "/assets/atmolay/filter0.png",
+        "/assets/atmolay/filter1.png",
+        "/assets/atmolay/filter2.png",
+        "/assets/atmolay/filter3.png",
+        "/assets/atmolay/filter4.png"
     ],
 
     "footsteps":["assets/footsteps/fs1.mp3",
