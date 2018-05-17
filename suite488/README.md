@@ -1,0 +1,37 @@
+
+
+Lor Mania Current Build{}
+
+
+
+
+
+
+
+
+
+(f)oreward
+(l)eft
+(r)ight
+(b)ack
+*interaction
+
+//intro screen//
+Atmotest 
+(f)
+Statue2c
+(f)
+Statue2b
+(f)
+Statue2
+*click face to play audio
+    [1]
+        (r) Calle
+            *click toilet to play audio
+            *click sink to play audio
+            *click lantern to play audio
+    [2]
+        (f) ForkintheRoad
+            *click worm to play audio
+                [1]
+                    (r)Trashteller
